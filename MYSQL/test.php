@@ -7,7 +7,7 @@
 	返回值：1、当连接成功的时候返回mysql连接标识符
 			2、当连接失败的时候返回false
 	********************************************/
-	if($con = mysql_connect('localhost', 'root', '123')){
+	if($con = mysql_connect('localhost', 'root', '111111')){
 		//echo "连接成功";
 	}else{
 		//echo "连接失败";
@@ -19,7 +19,7 @@
 	返回值：1、当选择成功的时候返回true
 			2、当选择失败的时候返回false
 	********************************************/
-	if(mysql_select_db('info')){//当选择成功的时候，返回true2、当选择失败的时候返回false
+	if(mysql_select_db('test')){//当选择成功的时候，返回true2、当选择失败的时候返回false
 		//echo "选择数据库成功";
 	}else{
 		//echo "选择数据库失败";
@@ -45,7 +45,7 @@
 	//	echo "插入失败";
 	//}
 	
-	$query = mysql_query('select count(name) from test');//当mysql_query 执行的sql是select语句的时候，如果执行成功，返回的是资源标识符
+	$query = mysql_query('select count(name) from test_1');//当mysql_query 执行的sql是select语句的时候，如果执行成功，返回的是资源标识符
 	print_r(mysql_result($query, 0));
 	/*while($row = mysql_fetch_row($query)){//我们发现它返回出了查询到的资源的第一条数据
 		echo $row[0].$row[1].'个<br />';
