@@ -10,3 +10,5 @@ require_once('connect.php');
 
 //入库
 print_r($_POST);
+
+//phpinfo();
